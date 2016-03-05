@@ -1,0 +1,367 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+#wrapper {
+  padding: 30px;
+  width: 100%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+	line-height: 1.6;
+	background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.name {
+  padding: 1.5625em;
+}
+
+.student {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0 ;
+}
+
+
+.main-nav li {
+  color:black;
+  list-style: none;
+  display: block;
+  margin-bottom: 2px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 5px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-nav li a{
+  color: black;
+}
+
+.main-nav li a:hover {
+  color: blue;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+
+.profile {
+  text-align: center;
+  color: gray;
+  padding: 30px;
+}
+
+.profile-photo {
+  max-width: 20%;
+  border-radius: 90%;
+}
+
+.profile p {
+  padding: 0 20%;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+
+/* ================================= 
+  Page Portfolio
+==================================== */
+
+.container {
+  text-align: center;
+  margin: 0 25px;
+  padding: 30px;
+}
+
+#gallery {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  text-align: center;
+}
+
+#gallery li a p {
+  margin: 1.25em 1.25em;
+  padding: 0; 
+  font-size: .85em;
+  color: #000;
+  text-align: center;
+}
+
+#gallery li a h2 {
+  margin: 0;
+  padding-top: 5%;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+}
+
+
+/* ================================= 
+  Footer Layout
+==================================== */
+
+.info {
+  text-align: center;
+}
+
+.info ul li {
+  list-style:none;
+}
+
+.info p {
+  font-size: 16px;
+  margin: 0 1em;
+}
+
+.info ul li a{
+  text-align: center;
+  color: #000;
+  list-style: none;
+  text-decoration:none;
+  margin: 1em;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-footer {
+	padding: 2em 1.5625em;
+	border-top: .5px solid slategrey;
+	
+}
+
+.main-footer a {
+  color: #000;
+  float: right;
+}
+
+.main-footer li {
+  display: none;
+}
+
+.footer-name {
+  float: left;
+  margin: 0 auto;
+}
+
+
+.footer-nav li{
+  list-style: none;
+  font-weight: bold;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.footer-nav li a {
+ margin: 0 auto;
+}
+
+.footer-nav li a:hover {
+  color: blue;
+}
+
+#back-to-top {
+ font-weight: bold;
+}
+
+
+@media (min-width: 320px) {
+  body {
+   background-color: #ffffff;
+  }
+  .main-nav li {
+   background-color: #ffffff;
+  }
+  
+  
+}
+
+@media (min-width: 321px) {
+ body {
+  background: linear-gradient(#e6eeff, white);
+ }
+ .main-nav li {
+  background-color: #e6eeff;
+ }
+ 
+}
+
+
+/*This media rule will make two columns in the gallery list items after its at 768 pixels wide*/
+
+@media (min-width: 768px) {
+    
+  
+    .main-nav li{
+      display: inline-block;
+      padding: 0 20px;
+      background-color: #e6eeff;
+      text-align: center;
+    }
+    
+    body {
+     background: linear-gradient(#e6eeff, white);
+    }
+    
+    
+    
+    nav {
+      text-align: center;
+    }
+    
+    
+    
+    nav a {
+      padding: 15px 1%;
+    }
+    
+    .info p {
+      padding: 0 20%;
+    }
+    
+    
+    #gallery li{
+      max-width: 100%;
+      float: left ;
+      width: 50%;
+      margin: 0 auto;
+      padding: 5px;
+    }
+    
+    #gallery li:nth-child(2n + 1) {
+    clear: left;
+    }
+    
+    
+    #back-to-top {
+      display: none;
+      vertical-align: top;
+    }
+    
+    .footer-nav {
+      margin: 0 auto;
+    }
+    
+    .footer-nav a {
+     padding: 0 15px 1%;
+    }
+    
+    
+    .footer-nav li {
+      display: block;
+    }
+    
+    .profile p {
+      padding-left: 3.125em;
+      width: 70%;
+      margin-top: auto;
+    }
+    
+    .profile img{
+      width: 35%;
+      float: right;
+      padding-right: 2%;
+      margin-left: 50px ;
+    }
+  
+    
+}
+
+
+
+/*This media rule will make two columns in the gallery list items after its at 768 pixels wide*/
+
+@media (min-width: 1024px) {
+  
+    #wrapper {
+      width: 100%;
+    }
+  
+    nav  {
+      float: right;
+      display: block;
+      margin: 0 0 0 5%;
+      padding-top: 25px;
+    }
+    
+    .student {
+      float: left;
+    }
+    
+    .profile {
+      float: right;
+    }
+    
+    #gallery li{
+    width: 30%;
+    display: block;
+    margin-left: 2.5%;
+    margin-bottom: 4.5%;
+    max-height: 320px;
+    }
+    
+    
+    #gallery li:nth-child(2n - 3) {
+    clear: right;
+    }
+    
+    .profile p {
+      padding-left: 25px;
+      width: 60%;
+    }
+    
+    #back-to-top {
+     display: none;
+    }
+  
+}
+
+
+
+
+
+
+/* Float Clearfix
+================================ */
+
+.group:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
